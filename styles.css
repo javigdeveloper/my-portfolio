@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  /* background-image: url("images/singapore.jpg"); */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8) 10%,
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.9) 80%
+    ),
+    url("images/singapore.jpg");
+  background-size: cover;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 8vh;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 32px;
+  font-size: 18px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  font-size: 32px;
+}
+.icons a {
+  text-decoration: none;
+}
+i {
+  color: white;
+  margin-right: 32px;
+}
