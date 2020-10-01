@@ -8,37 +8,61 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  /* background-image: url("images/singapore.jpg"); */
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.8) 10%,
-      rgba(255, 255, 255, 0.1),
-      rgba(0, 0, 0, 0.9) 80%
+      rgba(0, 0, 0, 0) 78%,
+      rgba(0, 0, 0, 0.9) 92%
     ),
     url("images/singapore.jpg");
   background-size: cover;
 }
-nav {
+.top-container {
   display: flex;
-  justify-content: flex-end;
+  height: 12vh;
+  justify-content: space-between;
   align-items: flex-end;
-  height: 8vh;
+  color: rgb(206, 206, 206);
 }
-nav a {
+.name {
+  margin-left: 50px;
+  font-size: 17px;
+  text-shadow: white 1px 1px 10px;
+}
+.top-nav {
+  align-self: center;
+}
+.top-nav a {
   color: white;
   text-decoration: none;
-  margin-right: 32px;
-  font-size: 18px;
+  margin-right: 50px;
+  font-size: 24px;
+}
+.top-nav a:hover {
+  color: rgb(206, 205, 205);
+  text-shadow: 1px 1px 10px rgb(206, 205, 205);
 }
 .icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 10vh;
-  font-size: 32px;
+  font-size: 48px;
 }
 .icons a {
   text-decoration: none;
 }
 i {
   color: white;
-  margin-right: 32px;
+}
+i:hover {
+  color: rgb(206, 205, 205);
+  text-shadow: 0px 0px 10px rgba(206, 205, 205, 0.5);
+}
+.technologies img {
+  width: 20vw;
+  margin: 10px;
+  border: 3px solid black;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
