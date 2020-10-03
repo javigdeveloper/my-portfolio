@@ -56,6 +56,39 @@ i {
 i:hover {
   color: rgb(206, 205, 205);
   text-shadow: 0px 0px 10px rgba(206, 205, 205, 0.5);
+  cursor: pointer;
+}
+/* modal */
+.modal {
+  position: absolute;
+  transform: translate(190%, -100%);
+  padding: 2%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.show {
+  animation: roll-down 1s forwards;
+}
+.modal h4 {
+  font-size: 14px;
+  display: inline;
+}
+.modal p {
+  display: inline;
+  font-size: 20px;
+  font-weight: 700;
+}
+@keyframes roll-down {
+  from {
+    transform: translate(190%, -100%);
+  }
+  to {
+    transform: translate(190%, 90%);
+  }
 }
 /* bottom section: */
 .technologies {
