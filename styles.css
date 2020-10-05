@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
+  /* overflow-x: hidden; */
 }
 /* top section: */
 .about-me {
@@ -61,7 +63,9 @@ i:hover {
 /* modal */
 .modal {
   position: absolute;
-  transform: translate(190%, -100%);
+  top: -8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 2%;
   background-color: white;
   border-radius: 10px;
@@ -84,15 +88,65 @@ i:hover {
 }
 @keyframes roll-down {
   from {
-    transform: translate(190%, -100%);
+    top: -8%;
   }
   to {
-    transform: translate(190%, 90%);
+    top: 20%;
   }
 }
-/* bottom section: */
+/* mid section: */
 .technologies {
   height: 100vh;
+}
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 100vh;
+  background-image: linear-gradient(
+    rgb(10, 10, 10),
+    rgb(0, 0, 0) 20%,
+    rgb(255, 255, 255) 99%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+.mid-container {
+  display: flex;
+  height: 8vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.mid-nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 24px;
+}
+.span-container {
+  text-align: center;
+}
+.viewing {
+  animation: fade 3000ms 800ms backwards;
+}
+.span-container .span {
+  font-size: 18px;
+  color: rgb(206, 206, 206);
+  opacity: 0;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.span-container .span:hover {
+  opacity: 1;
 }
 .tech-images {
   display: flex;
@@ -100,9 +154,23 @@ i:hover {
   justify-content: center;
 }
 .tech-images img {
-  width: 15%;
+  width: 350px;
+  height: 160px;
   border: 3px solid black;
-  border-radius: 50%;
+  border-radius: 20px;
+  margin: 2px;
+}
+.hover-class {
+  opacity: 0;
+  transition: opacity 1200ms;
+}
+.hover-class:hover {
+  opacity: 1;
+}
+
+/* bottom section: */
+.projects {
+  height: 100vh;
 }
 .sample-images {
   display: flex;
