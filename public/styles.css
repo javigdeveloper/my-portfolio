@@ -177,7 +177,7 @@ i:hover {
     text-align: center;
   }
   .viewing {
-    animation: fade 3000ms 800ms backwards;
+    animation: fade 5000ms 800ms backwards;
   }
   .span-container .span {
     font-size: 20px;
@@ -205,11 +205,11 @@ i:hover {
     justify-content: center;
   }
   .web-container .tech-images img {
-    width: 350px;
-    height: 160px;
+    width: 27vw;
+    height: 23vh;
     border: 3px solid black;
     border-radius: 20px;
-    margin: 2px;
+    margin: 4px;
   }
   .hover-class {
     opacity: 0;
@@ -382,24 +382,63 @@ i:hover {
   }
 }
 
-@media (max-width: 600px) and (orientation: portrait) {
-  .top-nav a {
-    margin-right: 20px;
+@media (max-width: 1200px) and (orientation: portrait) {
+  .name-mobile {
+    font-size: 42px;
   }
+  .top-nav a,
   .nav a {
-    font-size: 18px;
-    margin-right: 20px;
+    font-size: 36px;
+  }
+  .icons {
+    font-size: 70px;
   }
   .mobile-span {
     margin-top: 16vh;
+  }
+  .mobile-span .span {
+    font-size: 30px;
   }
   .mobile-container {
     width: 70%;
     margin: 20px auto;
   }
+  .mobile-buttons {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .name-mobile {
+    font-size: 26px;
+  }
+  .top-nav a,
+  .nav a {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .icons {
+    font-size: 46px;
+  }
+  .mobile-span {
+    margin-top: 16vh;
+  }
+  .mobile-span .span {
+    font-size: 20px;
+  }
+  .mobile-buttons {
+    font-size: 80px;
+  }
 }
 
 @media (max-width: 460px) and (orientation: portrait) {
+  .name-mobile {
+    font-size: 18px;
+  }
+  .top-nav a,
+  .nav a {
+    font-size: 14px;
+  }
   .mobile-span {
     margin-top: 20vh;
   }
